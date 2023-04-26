@@ -1,0 +1,611 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+html{
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+}
+
+body{
+    font-family: 'Courier New', Courier, monospace;
+}
+
+header{
+    display: grid;
+    width: 100%;
+    height: 100vh;
+    background: url(https://preview.colorlib.com/theme/vineyard/images/bg_1.jpg.webp);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    padding: 2em;
+}
+
+nav{
+    display: grid;
+    width: 100%;
+    height: max-content;
+    grid-template-columns: repeat(2, 2fr );
+    align-items: center;
+    padding: 1em 3em;
+    position: fixed;
+}
+
+.links{
+    display: block;
+    text-transform: uppercase;
+    word-spacing: 10px;
+}
+
+.header_cont{
+    display: grid;
+    width: 100%;
+    height: 100%;
+    justify-content: end;
+    padding: 17em 16em 0em 30em;
+    font-size: 1.2em;
+    color: cornflowerblue;
+}
+.played{
+    display: flex;
+    align-items: center;
+    gap: 1em;
+}
+.play{
+    width: 5em;
+    height: 5em;
+    border-radius: 100%;
+    background-color: black;;
+}
+.plays{
+    width: 5em;
+    height: 5em;
+    border-radius: 100%;
+    background-color: black;;
+}
+main{
+    width: 100%;
+    height: auto;
+}
+.daily{
+    display:grid;
+    grid-template-columns: repeat(2, 1fr);
+    width: 100%;
+    height: max-content;
+    margin: 0 auto;
+    padding: 0em 6em;
+}
+.img_daily{
+    width: 100%;
+    height: 100%;
+    background: url(https://preview.colorlib.com/theme/vineyard/images/about.jpg.webp);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.btn_daily{
+    display: grid;
+    width: 100%;
+    height: 100%;
+    grid-template-rows: repeat(6, 5fr);  
+}
+.btn{
+    display: flex;
+    background-color: rgba(230, 221, 234, 0.555);
+    padding: 1em 2em;
+    border-color:transparent ;
+    color: #151111;
+}
+.btn:hover{
+    background-image: linear-gradient(44deg, rgba(193, 42, 207, 0.315),rgba(179, 39, 197, 0.37), rgba(110, 13, 123, 0.43)) ;
+    border: 3px solid cornflowerblue;
+}
+.btn:active{
+    background-image: linear-gradient(44deg, rgba(148, 12, 161, 0.483),rgba(67, 8, 127, 0.514), rgba(27, 9, 185, 0.514)) ;
+    border: 3px solid cornflowerblue;
+}
+.btn_title{
+    display: block;
+    text-align: end;
+    padding: 1em ;
+}
+.we_are{
+    display:grid;
+    grid-template-columns: repeat(2, 1fr);
+    width: 100%;
+    height: max-content;
+    margin: 0 auto;
+    padding: 0em 6em;
+}
+.img_WE_ARE{
+    width: 100%;
+    height: 100%;
+    background: url(https://preview.colorlib.com/theme/vineyard/images/about-2.jpg.webp);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.we_are_cont{
+    width: 100%;
+    height: 100%;
+    font-size:1.6em;
+    padding: 2em 0em;
+}
+.we_are_stat{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    margin-top: 3em;
+    gap: 2rem;
+}
+
+.table_cont{
+    display: block;
+    text-align: center;
+    padding: 2em;
+    font-size: 1.3em;
+}
+
+.lord_WE_ARE{
+    width: 100%;
+    height: 100%;
+    background: url(https://lh3.googleusercontent.com/erqdhcH0ZXBpLpxs8Bd20joKUo5iLEZcCoN-VEETEKFME-IlY83l4vyVdV-N-fyHw928ThRGSJIu1yzj9Pw_rey4cStDgC9i_R-bMrHJfg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    padding: 10em 10em;
+}
+.lord_are_cont{
+    font-size:1.4em;
+    padding: 2em;
+}
+
+.INSPIRATIONAL{
+    display:grid;
+    grid-template-rows: repeat(3, 1fr);
+    width: 100%;
+    height: max-content;
+    margin: 0 auto;
+    padding: 2em 0em;
+}
+.inst{
+    display:grid;
+    grid-template-columns: repeat(4, 1fr);
+    width:100%;
+    height: 400px;
+}
+.inst_img{
+    width: 100%;
+    height: 100%;
+    background: url(https://lh3.googleusercontent.com/erqdhcH0ZXBpLpxs8Bd20joKUo5iLEZcCoN-VEETEKFME-IlY83l4vyVdV-N-fyHw928ThRGSJIu1yzj9Pw_rey4cStDgC9i_R-bMrHJfg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.inst_media{
+    display:grid;
+    grid-template-columns: repeat(4, 1fr);
+    width:100%;
+    height: 400px;
+}
+.INSPIRATIONAL_TESTIMONY{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    padding: 0em 5em 10em 5em;
+    font-size: 1.8em;
+    gap: 2em;
+    margin-top: -5em;
+}
+
+.play_INSPIRATIONAL{
+    width: 5em;
+    height: 5em;
+    border-radius: 100%;
+    background-color: black;
+    margin:0 auto;
+}
+
+.How_To_Recover{
+    display: flex;
+    flex-direction: column;
+    width: 20%;
+    height: max-content;
+    background-color: rgb(253, 253, 253); 
+    margin-left: 4em;
+    margin-top: 18em;
+    gap:1em ;
+    padding: 1em;
+    position: absolute;
+}
+footer{
+    width: 100%;
+    height: max-content;
+    background-color: #1a1c1df9;
+    margin: 0 auto;
+}
+.footer_content{
+    display: flex;
+    justify-content: flex-start;
+    width: 100%;
+    height: max-content;
+    padding: 10rem 9rem;
+    gap: 1rem;
+    margin: 0 auto;
+}
+.footer_tytle >p{
+    margin-top: 0.5rem;
+}
+.footer_tytle >a{
+    margin-top: 0.5rem;
+}
+.footer_tytle{
+    display: flex;
+    flex-direction: column;
+    font-style: oblique;
+    color: rgb(255, 255, 255);
+    margin: 0 auto;
+    width: 20rem ;
+}
+.input{
+    margin-top: 1rem;
+    height: 2rem;
+}
+
+.hidden_btn{
+    display: none;
+    background-color: rgba(230, 221, 234, 0.555);
+    padding: 1em 2em;
+    border-color:transparent ;
+    color: #151111;
+}
+.close{
+    position: absolute;
+    top: 1rem;
+    right: 2rem;
+    font-size: 2rem;
+    border: none;
+    background: none;
+    cursor: pointer;
+}
+
+.modal{
+    opacity: 1;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 60%;
+    background-color: #fff;
+    padding: 3rem;
+    border-radius: 10px;
+    z-index: 10;
+}
+
+.hidden{
+    display: none;
+}
+.overlay{
+    position: absolute;
+    top: 0;
+    width: 99.9%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(4px);
+    z-index: 5;
+}
+
+@media screen and (max-width: 1300px){
+    nav{
+        display: grid;
+        width: 100%;
+        height: max-content;
+        grid-template-columns: repeat(2, 3fr );
+        align-items: center;
+        padding: 1em 2em;
+        position: fixed;
+    }
+    .links{
+        text-transform: uppercase;
+        word-spacing: 5px;
+    }
+    .header_cont{
+        display: grid;
+        width: 100%;
+        height: 100%;
+        justify-content: end;
+        padding: 17em 14em 0em 20em;
+        font-size: 1.2em;
+        color: cornflowerblue;
+    }
+    .links{
+        text-transform: uppercase;
+        word-spacing: 5px;
+    }
+    .btn{
+        display: flex;
+        background-color: rgba(230, 221, 234, 0.555);
+        padding: 3em 1em;
+        border-color:transparent ;
+        color: #151111;
+        gap: 2em;
+    }
+    .btn_title{
+        display: block;
+        text-align: end;
+    }
+    .plays{
+        width: 7em;
+        height: 5em;
+        border-radius: 100%;
+        background-color: black;;
+    }
+    .img_WE_ARE{
+        width: 100%;
+        height: 100%;
+        background: url(https://preview.colorlib.com/theme/vineyard/images/about-2.jpg.webp);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+    }
+    .we_are_cont{
+        width: 100%;
+        height: 100%;
+        font-size:1.3em;
+    }
+    .How_To_Recover{
+        display: flex;
+        flex-direction: column;
+        width: 20%;
+        height: max-content;
+        background-color: rgb(253, 253, 253); 
+        margin-left: 3em;
+        margin-top: 18em;
+        gap:1em ;
+        padding: 1em;
+        position: absolute;
+    }
+    .footer_content{
+        display: flex;
+        justify-content: flex-start;
+        width: 100%;
+        height: max-content;
+        padding: 8rem 7rem;
+        gap: 1rem;
+        margin: 0 auto;
+    }
+}
+
+@media screen and (max-width: 1000px){
+    nav{
+        display: grid;
+        width: 100%;
+        height: max-content;
+        grid-template-columns: repeat(2, 2fr);
+        align-items: center;
+        padding: 0em 0em;
+        position: fixed;
+        font-size: 0.8em;
+    }
+    .links{
+        text-transform: uppercase;
+        word-spacing: 0px;
+    }
+    .header_cont{
+        display: grid;
+        width: 100%;
+        height: 100%;
+        justify-content: end;
+        padding: 25em 0em 10em 25em;
+        font-size: 1em;
+        color: cornflowerblue;
+    }
+    .daily{
+        display:grid;
+        grid-template-columns: repeat(1, 1fr);
+        width: 100%;
+        height: max-content;
+        margin: 0 auto;
+        padding: 0em 6em;
+    }
+    .img_daily{
+        width: 100%;
+        height: 600px;
+        background: url(https://preview.colorlib.com/theme/vineyard/images/about.jpg.webp);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+    }
+    .we_are{
+        display:grid;
+        grid-template-columns: repeat(1, 1fr);
+        width: 100%;
+        height: max-content;
+        margin: 0 auto;
+        padding: 0em 6em;
+    }
+    .img_WE_ARE{
+        width: 100%;
+        height: 600px;
+        background: url(https://preview.colorlib.com/theme/vineyard/images/about-2.jpg.webp);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+    }
+    .plays{
+        width: 5em;
+        height: 5em;
+        border-radius: 100%;
+        background-color: black;;
+    }
+    .How_To_Recover{
+        display: flex;
+        flex-direction: column;
+        width: 20%;
+        height: max-content;
+        background-color: rgb(253, 253, 253); 
+        margin-left: 2em;
+        margin-top: 18em;
+        gap:1em ;
+        padding: 1em;
+        position: absolute;
+    }
+}
+@media screen and (max-width: 800px){
+    .header_cont{
+        display: grid;
+        width: 100%;
+        height: 100%;
+        justify-content: end;
+        padding: 20em 0em 10em 10em;
+        font-size: 1em;
+        color: cornflowerblue;
+    }
+    .daily{
+        display:grid;
+        grid-template-columns: repeat(1, 1fr);
+        width: 100%;
+        height: max-content;
+        margin: 0 auto;
+        padding: 0em 2em;
+    }
+    .plays{
+        width: 6em;
+        height: 5em;
+        border-radius: 100%;
+        background-color: black;;
+    }
+    .we_are{
+        display:grid;
+        grid-template-columns: repeat(1, 1fr);
+        width: 100%;
+        height: max-content;
+        margin: 0 auto;
+        padding: 0em 2em;
+    }
+    .inst{
+        display:grid;
+        grid-template-rows: repeat(4, 1fr);
+        grid-template-columns: repeat(1, 1fr);
+        width:100%;
+        height: 1400px;
+    }
+    .inst_media{
+        display:grid;
+        grid-template-rows: repeat(4, 1fr);
+        grid-template-columns: repeat(1, 1fr);
+        width:100%;
+        height: 2000px;
+        gap: 20em ;
+        margin-top: -30em;
+    }
+    .INSPIRATIONAL_TESTIMONY{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        padding: 0em 5em 0em 5em;
+        font-size: 1.4em;
+        gap: 2em;
+        margin-top: -20em;
+    }
+    .How_To_Recover{
+        display: flex;
+        flex-direction: column;
+        width: 80%;
+        height: max-content;
+        background-color: rgb(253, 253, 253); 
+        margin-left: 6em;
+        margin-top: 14em;
+        gap:1em ;
+        padding: 1em;
+        position: absolute;
+    }
+    .footer_content{
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        width: 100%;
+        height: max-content;
+        padding: 10rem 9rem;
+        gap: 3rem;
+        margin: 0 auto;
+        margin-top: 20em;
+    }
+    .links{
+        display: none;
+    }
+    .linkses{
+        display: block;
+    }
+    .hidden_btn{
+        display: flex;
+        background-color: rgba(230, 221, 234, 0.555);
+        padding: 1em 2em;
+        border-color:transparent ;
+        color: #030303;
+    }
+}
+@media screen and (max-width: 590px){
+    nav{
+        display: grid;
+        width: 100%;
+        height: max-content;
+        grid-template-columns: repeat(2, 2fr);
+        align-items: center;
+        padding: 0em 0em;
+        position: fixed;
+        font-size: 0.8em;
+    }
+    .header_cont{
+        display: grid;
+        width: 100%;
+        height: 100%;
+        justify-content: end;
+        padding: 20em 0em 10em 6em;
+        font-size: 1em;
+        color: cornflowerblue;
+    }
+    .daily{
+        display:grid;
+        grid-template-columns: repeat(1, 1fr);
+        width: 100%;
+        height: max-content;
+        margin: 0 auto;
+    }
+    .plays{
+        width: 8em;
+        height: 5em;
+        border-radius: 100%;
+        background-color: black;;
+    }
+    .we_are_cont{
+        width: 100%;
+        height: 100%;
+        font-size:1em;
+        padding: 2em 0em;
+    }
+    .INSPIRATIONAL_TESTIMONY{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        padding: 0em 5em 0em 5em;
+        font-size: 1em;
+        gap: 2em;
+        margin-top: -30em;
+    }
+    .inst_media{
+        display:grid;
+        grid-template-rows: repeat(4, 1fr);
+        grid-template-columns: repeat(1, 1fr);
+        width:100%;
+        height: 2000px;
+        gap: 20em ;
+        margin-top: -40em;
+    }
+}
